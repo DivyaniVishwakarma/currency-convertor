@@ -32,7 +32,7 @@ const updateExchangerate=async()=>{
      if(amtVal ===""|| amtVal<1){
       alert("Amount must be greater than 0")
         amtVal=1;
-        amount.value=1;   //amount.value input box ke andar value change change ho rhi
+        amount.value=1;   
 
      }
      
@@ -44,7 +44,7 @@ const updateExchangerate=async()=>{
      msg.innerText=`${amtVal} ${fromCurr.value}=${finalAmt}${toCurr.value}`;
     
 }
-const updateFlag =(element)=>{ //here element is select
+const updateFlag =(element)=>{ 
     let currCode=element.value;
     let countryCode=countryList[currCode];
     let newSrc=`https://flagsapi.com/${countryCode}/flat/64.png`;
@@ -52,7 +52,7 @@ const updateFlag =(element)=>{ //here element is select
     img.src=newSrc;
 };
 
-//converting
+
 btn.addEventListener("click",(evt)=>{
      evt.preventDefault();                 //prevent default operation of form like reloading on clicking button etc.
     

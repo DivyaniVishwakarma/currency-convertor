@@ -81,8 +81,7 @@ h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 button:active{
-     /* opacity: 0.8; */
-     /* transition: 0.2s ease; */
+    
      transform: scale(0.95);
     
 }
